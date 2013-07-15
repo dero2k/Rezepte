@@ -1,10 +1,8 @@
-recipe-16
-========
+searching the chefkoch api and display results in a Table view
 
-[Recipe 16: Populating A UITableView With Data From The Web](http://nscookbook.com/2013/03/ios-programming-recipe-16-populating-a-uitableview-with-data-from-the-web/)
+<!-- MacBuildServer Install Button -->
+<div class="macbuildserver-block">
+    <a class="macbuildserver-button" href="http://macbuildserver.com/project/github/build/?xcode_project=dev.xcodeproj&amp;target=dev&amp;repo_url=https%3A%2F%2Fgithub.com%2Fdero2k%2FRezepte%2F&amp;build_conf=Release" target="_blank"><img src="http://com.macbuildserver.github.s3-website-us-east-1.amazonaws.com/button_up.png"/></a><br/><sup><a href="http://macbuildserver.com/github/opensource/" target="_blank">by MacBuildServer</a></sup>
+</div>
+<!-- MacBuildServer Install Button -->
 
-Please visit [NSCookbook](http://nscookbook.com) for more information.
-
-###License
-
-NSCookbook's source code is available under the MIT license. See the LICENSE file for more info.
