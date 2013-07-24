@@ -1,5 +1,4 @@
 
-
 #import "zufall.h"
 #import "AFNetworking.h"
 
@@ -10,22 +9,12 @@
 @implementation ViewController22
 
 
-
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self makeRestuarantsRequests3];
   
 }
-
-
-
-
-
-
 
 
 
@@ -53,18 +42,10 @@
                                                                                             
                                                                                         }];
     
-    
-    
-    
     [operation start];
     
     
 }
-
-
-
-
-
 
 
 - (IBAction)refresh:(id)sender {
