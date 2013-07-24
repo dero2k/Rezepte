@@ -1,14 +1,14 @@
 
 
 
-#import "ViewController.h"
+#import "zufall.h"
 #import "AFNetworking.h"
 
-@interface ViewController ()
+@interface ViewController22 ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController22
 
 
 
@@ -21,16 +21,16 @@
     [self makeRestuarantsRequests3];
     
     //self.googlePlacesArrayFromAFNetworking3 = [[NSArray alloc] init];
-    //[self.restuarantImageView setImageWithURL:[NSURL URLWithString:[self.restuarantDetail objectForKey:@"RezeptBild"]]];
+    //[self.Bild setImageWithURL:[NSURL URLWithString:[self.restuarantDetail objectForKey:@"RezeptBild"]]];
     
     
     //self.restuarantAddressView.text = [self.restuarantDetail objectForKey:@"RezeptName2"];
-    //self.restuarantNameLabel.text = [self.restuarantDetail objectForKey:@"RezeptName"];
-    //self.restaurantnummer.text = [self.restuarantDetail objectForKey:@"RezeptShowID"];
-    //  NSDictionary *tempDictionary3= [self.googlePlacesArrayFromAFNetworking3 objectAtIndex:0];
     
+    //self.restaurantnummer.text = [self.restuarantDetail objectForKey:@"RezeptShowID"];
+   
     
     // self.label2.text = [tempDictionary3 objectForKey:@"rezept_zubereitung"];
+    
     
     
 }
@@ -59,8 +59,10 @@
                                                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject) {
                                                                                             self.googlePlacesArrayFromAFNetworking3 = [responseObject objectForKey:@"result"];
                                                                                             NSDictionary *tempDictionary3= [self.googlePlacesArrayFromAFNetworking3 objectAtIndex:0];
-                                                                                         //   self.restuarantAddressView33.text = [tempDictionary3 objectForKey:@"rezept_zubereitung"];
-                                                                                            
+                                                                                          self.zubereitung.text = [tempDictionary3 objectForKey:@"rezept_zubereitung"];
+                                                                                        		 self.Name.text = [tempDictionary3 objectForKey:@"rezept_name"];
+                                                                                       
+
                                                                                         }
                                                                                         failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id responseObject) {
                                                                                             NSLog(@"Request Failed with Error: %@, %@", error, error.userInfo);
@@ -82,4 +84,6 @@
 
 
 
+- (IBAction)refresh:(id)sender {
+}
 @end

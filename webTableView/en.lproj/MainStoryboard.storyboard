@@ -181,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCO-8m-7Sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="282"/>
+            <point key="canvasLocation" x="652" y="360"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8DW-iG-EJU">
@@ -206,6 +206,13 @@
                 <tabBarController definesPresentationContext="YES" id="lTD-V8-OCe" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hqy-Mf-2Uo">
                         <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="uub-Pq-7Hz">
+                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="G1J-nx-ppO"/>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ZfL-On-iZc">
@@ -216,7 +223,7 @@
                     <connections>
                         <segue destination="36l-1V-GGD" kind="relationship" relationship="viewControllers" id="3tZ-rA-BzA"/>
                         <segue destination="ewv-iP-THr" kind="relationship" relationship="viewControllers" id="cTj-fz-T3L"/>
-                        <segue destination="15c-Zr-3hu" kind="relationship" relationship="viewControllers" id="LsH-xf-vUH"/>
+                        <segue destination="yCM-qP-YMa" kind="relationship" relationship="viewControllers" id="cOz-Ba-kjt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEn-VL-9s6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,23 +260,67 @@
             </objects>
             <point key="canvasLocation" x="-180" y="887"/>
         </scene>
-        <!--View Controller - Item-->
-        <scene sceneID="u36-sP-bPA">
+        <!--View Controller22 - zufall-->
+        <scene sceneID="zAG-Sr-QFb">
             <objects>
-                <viewController id="15c-Zr-3hu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JzE-77-EN5">
+                <viewController id="yCM-qP-YMa" customClass="ViewController22" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cny-3S-Dbb">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6K-0x-lS5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1008" id="87E-Dm-VOe"/>
+                                    <constraint firstAttribute="width" constant="100" id="xQ8-gf-Nri"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQw-eN-p4c">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="298" id="nDZ-gz-6Va"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7Y-CY-sP2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="q4l-OE-zvi"/>
+                                    <constraint firstAttribute="height" constant="131" id="zbs-Zo-hZN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-T9-DYI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DQw-eN-p4c" firstAttribute="trailing" secondItem="cny-3S-Dbb" secondAttribute="trailing" type="default" id="Q8t-gV-7JE"/>
+                            <constraint firstItem="n7Y-CY-sP2" firstAttribute="top" secondItem="3pL-T9-DYI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="asc-1F-G4v"/>
+                            <constraint firstItem="DQw-eN-p4c" firstAttribute="leading" secondItem="cny-3S-Dbb" secondAttribute="leading" type="default" id="d8E-Ll-nmc"/>
+                            <constraint firstItem="3pL-T9-DYI" firstAttribute="top" secondItem="cny-3S-Dbb" secondAttribute="top" constant="17" id="e6c-YE-DCf"/>
+                            <constraint firstItem="3pL-T9-DYI" firstAttribute="leading" secondItem="cny-3S-Dbb" secondAttribute="leading" constant="27" id="jvN-gU-aaO"/>
+                            <constraint firstItem="l6K-0x-lS5" firstAttribute="leading" secondItem="cny-3S-Dbb" secondAttribute="leading" constant="100" id="m0E-qg-8Sd"/>
+                            <constraint firstItem="DQw-eN-p4c" firstAttribute="top" secondItem="cny-3S-Dbb" secondAttribute="top" constant="202" id="qps-z5-iFs"/>
+                            <constraint firstItem="n7Y-CY-sP2" firstAttribute="leading" secondItem="cny-3S-Dbb" secondAttribute="leading" constant="12" id="swp-AC-gh0"/>
+                            <constraint firstItem="l6K-0x-lS5" firstAttribute="top" secondItem="cny-3S-Dbb" secondAttribute="top" constant="1009" id="xfi-Gh-Ev0"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ume-ry-6xW"/>
+                    <tabBarItem key="tabBarItem" title="zufall" id="m38-gq-GYI"/>
+                    <navigationItem key="navigationItem" id="xcR-Eo-WNk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="qGW-Dq-5h7"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="view" destination="JzE-77-EN5" id="DNN-Ye-dWc"/>
+                        <outlet property="Bild" destination="n7Y-CY-sP2" id="eSO-qx-Vru"/>
+                        <outlet property="Name" destination="3pL-T9-DYI" id="Cgi-Oe-e3k"/>
+                        <outlet property="zubereitung" destination="DQw-eN-p4c" id="hqL-gi-9Xt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RKU-P5-K4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D33-SC-hbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="897"/>
+            <point key="canvasLocation" x="-36" y="1670"/>
         </scene>
     </scenes>
     <resources>
