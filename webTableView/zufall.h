@@ -3,7 +3,9 @@
 @interface ViewController22 : UIViewController
 
 
-
+@property (strong, nonatomic) NSArray *googlePlacesArrayFromAFNetworking4;
+@property (strong, nonatomic) NSArray *googlePlacesArrayFromAFNetworking5;
+@property (strong, nonatomic) NSArray *googlePlacesArrayFromAFNetworking6;
 @property (strong, nonatomic) NSArray *googlePlacesArrayFromAFNetworking3;
 
 @property (strong, nonatomic) NSArray *googlePlacesArrayFromAFNetworking2;

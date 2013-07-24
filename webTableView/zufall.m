@@ -34,6 +34,18 @@
                                                                                           self.zubereitung.text = [tempDictionary3 objectForKey:@"rezept_zubereitung"];
                                                                                         		 self.Name.text = [tempDictionary3 objectForKey:@"rezept_name"];
                                                                                        
+                                                                                           
+                                                                                            self.googlePlacesArrayFromAFNetworking5 =[tempDictionary3 objectForKey:@"rezept_bilder"];
+                                                                                            
+                                                                                            NSDictionary *tempDictionary4= [self.googlePlacesArrayFromAFNetworking5 objectAtIndex:0];
+                                                                                            
+                                                                                            NSDictionary *tempDictionary5 = [tempDictionary4 objectForKey:@"bigfix"];
+                                                                                            
+                                                                                            
+                                                                                            [self.Bild setImageWithURL:[NSURL URLWithString:[tempDictionary5 objectForKey:@"file"]]];
+                                                                                            
+                                                                                            
+                                                                                            
 
                                                                                         }
                                                                                         failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id responseObject) {
